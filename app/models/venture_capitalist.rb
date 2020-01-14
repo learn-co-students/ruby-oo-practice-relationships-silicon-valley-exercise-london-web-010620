@@ -40,8 +40,4 @@ class VentureCapitalist
         FundingRound.all.select {|i| i.startup.domain == domain}.map{|domain| domain.investment}.sum
     end
 
-
-
-
-
 end
