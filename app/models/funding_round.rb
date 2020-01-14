@@ -8,7 +8,7 @@ class FundingRound
     @startup = startup
     @venture_capitalist = venture_capitalist
     @type = type 
-    @investment = investment.to_f 
+    @investment = [investment, 0].to_f #no negative and float 
     @@all << self 
   end
 
