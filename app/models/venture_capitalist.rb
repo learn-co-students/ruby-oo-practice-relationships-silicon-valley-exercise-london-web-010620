@@ -34,4 +34,9 @@ class VentureCapitalist
         self.funding_rounds.max { |fr1, fr2| fr1.investment <=> fr2.investment }
     end
 
+    def invested(domain)
+        array = FundingRound.all.select {|round| round.startup.domain == domain}.map {|round| round.investment}
+        array.sum
+    end
+
 end

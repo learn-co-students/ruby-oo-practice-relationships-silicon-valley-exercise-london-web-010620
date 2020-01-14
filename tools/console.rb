@@ -13,7 +13,7 @@ s3 = Startup.new("Trouva", "Tom", "Retail")
 
 vc1 = VentureCapitalist.new("Perfect Partners", 600000)
 vc2 = VentureCapitalist.new("Virtuous Ventures", 30000000)
-vc3 = VentureCapitalist.new("Free For All Fund", 1000000000)
+vc3 = VentureCapitalist.new("Free For All Fund", 1000000001)
 
 fr1 = FundingRound.new(s1, vc1, "Angel", 2000)
 fr2 = FundingRound.new(s2, vc1, "Seed", 1000)
